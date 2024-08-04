@@ -15,8 +15,7 @@ function eliminarProducto(index) {
 
 function renderCarrito() {
     let contenidoHTML;
-    let total = 0; // Variable para la sumatoria total
-
+    let total = 0; 
     if (totalProductos() > 0) {
         contenidoHTML = `
         <div class="flex justify-center items-center my-10">
@@ -55,7 +54,6 @@ function renderCarrito() {
              `;
         });
 
-        // Mostrar el total en el contenedor correspondiente
         contenedorTotal.innerHTML = `<div class="flex justify-end items-end gap-3">
             <div class="flex gap-2 bg-purple-300 border rounded-xl p-3">
             
