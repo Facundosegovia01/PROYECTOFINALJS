@@ -28,7 +28,7 @@ function renderCarrito() {
         const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
         carrito.forEach((producto, index) => {
-            total += producto.price; 
+            total += (parseInt) (producto.price); 
             contenidoHTML += `
                 <div class="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
                     <div class="hidden lg:grid grid-cols-2 py-6">
@@ -39,7 +39,7 @@ function renderCarrito() {
                     </div>
                     <div class="grid grid-cols-1 lg:grid-cols-2 min-[550px]:gap-6 border-t border-gray-200 py-6">
                         <div class="flex items-center flex-col min-[550px]:flex-row gap-3 min-[550px]:gap-6 w-full max-xl:justify-center max-xl:max-w-xl max-xl:mx-auto">
-                            <div class="img-box"><img src="${producto.image}" alt="" class="xl:w-[140px]"></div>
+                            <div class="img-box"><img src="${producto.image}" alt="" class="w-72 h-full"></div>
                             <div class="pro-data w-full max-w-sm">
                                 <h5 class="font-semibold text-2xl leading-8 text-white max-[550px]:text-center">${producto.title}</h5>
                                 <h6 class="font-medium text-lg leading-8 text-purple-500 max-[550px]:text-center">$${producto.price}</h6>

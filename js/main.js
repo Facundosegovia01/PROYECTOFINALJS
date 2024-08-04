@@ -9,7 +9,7 @@ function renderProductos(productos) {
 
     for (const producto of productos) {
         contenidoHTML += `
-        <div class="w-60 h-full bg-gray-50 p-3 flex flex-col gap-1 rounded-2xl">
+        <div class="w-60 h-full bg-gray-50 p-3 flex flex-col gap-1 rounded-2xl mt-10">
             <img class="h-48 rounded-xl object-cover" src="${producto.image}" />
             <div class="flex flex-col gap-4">
                 <div class="flex flex-row justify-between">
